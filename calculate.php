@@ -9,15 +9,13 @@ $score = 0;
 $boostMultiplier = 1.5;
 $normalMultiplier = 1.0;
 
-/* $line = readline("Addresses File name: ");
+$line = readline("Addresses File name: ");
 $address_data = $line;
 
 $line = readline("Drivers File name: ");
 $driver_data = $line;
-*/
 
 if (file_exists($driver_data)) {
-    // readfile($driver_data);
     $lines = file($driver_data);
 
     foreach ($lines as $driver) {
